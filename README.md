@@ -14,10 +14,10 @@ Java Development Kit (JDK) 8 or higher.
 A CSV file named sortstudent.csv in the same directory as the Java source code, with the correct data format.
 
 ## 2. Project Structure
-your_project_directory
+``` your_project_directory
 ├── Sorting.java
 ├── Text.java
-└── sortstudent.csv
+└── sortstudent.csv ```
 Text.java: A simple data container class (id, first, last).
 Sorting.java: The main class containing the main method.
 sortstudent.csv: Contains the student data to be read.
