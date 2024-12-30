@@ -14,7 +14,6 @@ Java Development Kit (JDK) 8 or higher.
 A CSV file named sortstudent.csv in the same directory as the Java source code, with the correct data format.
 
 ## 2. Project Structure
-
 your_project_directory
 ├── Sorting.java
 ├── Text.java
@@ -40,6 +39,7 @@ Choose -f for sort by First name
 Choose -l for sort by Last name
 Choose -s for Search Student
 Choose function:
+
 Options
 -n: Sorts the students by ID.
 -f: Sorts the students by First Name.
