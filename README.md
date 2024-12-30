@@ -17,12 +17,13 @@ A CSV file named sortstudent.csv in the same directory as the Java source code, 
 ``` your_project_directory
 ├── Sorting.java
 ├── Text.java
-└── sortstudent.csv ```
+└── sortstudent.csv
+
 Text.java: A simple data container class (id, first, last).
 Sorting.java: The main class containing the main method.
 sortstudent.csv: Contains the student data to be read.
 
-## 3. Compilation and Execution
+## 3. Compilation and Execution 
 
 Compile the code:
 javac Sorting.java
