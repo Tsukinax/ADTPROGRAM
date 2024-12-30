@@ -14,11 +14,12 @@ Java Development Kit (JDK) 8 or higher.
 A CSV file named sortstudent.csv in the same directory as the Java source code, with the correct data format.
 
 ## 2. Project Structure
-``` your_project_directory
+```
+your_project_directory
 ├── Sorting.java
 ├── Text.java
 └── sortstudent.csv
-
+```
 Text.java: A simple data container class (id, first, last).
 Sorting.java: The main class containing the main method.
 sortstudent.csv: Contains the student data to be read.
@@ -26,20 +27,26 @@ sortstudent.csv: Contains the student data to be read.
 ## 3. Compilation and Execution 
 
 Compile the code:
+```
 javac Sorting.java
+```
 (This will also compile Text.java automatically.)
 Run the program:
+```
 java Sorting
+```
 
 ## 4. Usage
 
 After running the application, you will see:
+```
 
 Choose -n for sort by ID
 Choose -f for sort by First name
 Choose -l for sort by Last name
 Choose -s for Search Student
 Choose function:
+```
 
 Options
 -n: Sorts the students by ID.
@@ -50,7 +57,7 @@ Options
 ## 5. CSV File Format
 
 This program skips the first 7 lines of the CSV file as header/placeholder lines. Actual student data should begin after these 7 lines. Each line should have at least 4 comma-separated values, for example:
-
+```
 Row,ID,FirstName,LastName
 Placeholder 1
 Placeholder 2
@@ -62,14 +69,16 @@ Placeholder 6
 2,662115007,CHONCHANUN,KHACHONPHURITHANAKUL
 3,662115016,NATTHAPHUM,CHAIKHAN
 ... etc.
+```
 In the provided data snippet, each record looks like:
-
+```
 1	622115040	SUCHANUN 	SIRIJANYA
 2	662115007	CHONCHANUN 	KHACHONPHURITHANAKUL
 3	662115016	NATTHAPHUM 	CHAIKHAN
 4	662115039	MANAPAT 	KAEWLAI
 ...
 35	672115049	ANAWAT 	JANDEE
+```
 
 ## 6. Sample Output
 
@@ -77,7 +86,7 @@ Below is a sample interaction showing how the program might behave once you have
 
 ## 6.1 Sorting by ID (-n)
 Command / Input:
-
+```
 java Sorting
 Choose -n for sort by ID
 Choose -f for sort by First name
@@ -85,7 +94,8 @@ Choose -l for sort by Last name
 Choose -s for Search Student
 Choose function: -n
 Sample Output (showing sorted by ID in ascending order):
-
+```
+```
 622115040 SUCHANUN SIRIJANYA
 662115007 CHONCHANUN KHACHONPHURITHANAKUL
 662115016 NATTHAPHUM CHAIKHAN
@@ -96,17 +106,20 @@ Sample Output (showing sorted by ID in ascending order):
 ...
 (All entries sorted numerically by their ID.)
 
+```
+
 ## 6.2 Sorting by First Name (-f)
 Command / Input:
-
+```
 java Sorting
 Choose -n for sort by ID
 Choose -f for sort by First name
 Choose -l for sort by Last name
 Choose -s for Search Student
 Choose function: -f
+```
 Sample Output (showing sorted by First Name alphabetically):
-
+```
 ANAWAT JANDEE
 CHANLACHAT PANYOYAI
 CHANCHAKORN JULLAPECH
@@ -115,9 +128,10 @@ CHETSADA KANKARN
 CHIDNUCHA POBKEEREE
 CHONCHANUN KHACHONPHURITHANAKUL
 ...
+```
 ## 6.3 Sorting by Last Name (-l)
 Command / Input:
-
+```
 java Sorting
 Choose function: -l
 Sample Output (showing sorted by Last Name alphabetically):
@@ -130,9 +144,10 @@ BURGER
 CHAIKHAN
 CHAMPATHIP
 ...
+```
 ## 6.4 Searching for a Student (-s)
 Command / Input:
-
+```
 java Sorting
 Choose function: -s
 Enter name that you want to search: NATTHAPHUM
@@ -141,11 +156,13 @@ Sample Output:
 Found at original index: 3
 (If “NATTHAPHUM” was the 3rd entry in the original unsorted list. If not found, it would print “Not found.”)
 
+```
+
 # 7. Full Source Code
 
 Below is the complete Java code (Sorting.java and Text.java) for reference.
 (Make sure these classes are in separate files named Sorting.java and Text.java respectively.)
-
+```
 // Text.java
 public class Text {
     private String id;
@@ -253,6 +270,7 @@ public class Sorting {
         return -1;
     }
 }
+```
 Thank You
 
 
